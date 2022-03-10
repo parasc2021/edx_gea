@@ -1,0 +1,7 @@
+XBlock
+
+[dev]
+wheel
+
+[edx]
+xblock-utils

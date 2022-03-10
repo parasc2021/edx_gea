@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: edx-gea
+Version: 0.2.0
+Summary: An XBlock to grade external activities
+Home-page: https://github.com/openfun/edx-gea
+Author: Open FUN (France Universite Numerique)
+Author-email: fun.dev@fun-mooc.fr
+License: AGPL 3.0
+Keywords: Django,Open edX,MOOC,Xblock
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.8
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Provides-Extra: dev
+Provides-Extra: edx
+License-File: LICENSE
+
+Grade External Activity XBlock
+==============================
+
+This XBlock provides a way to grade external activity in edx-platform.
+The course staff will upload a simple csv containing usernames, grades and optional comments.
+Then through the same XBlock students will see their evaluation.
+
+.. image:: docs/_static/images/gea-assessment-lms_student.png
+
+.. image:: https://circleci.com/gh/openfun/edx-gea/tree/master.svg?style=svg
+    :target: https://circleci.com/gh/openfun/edx-gea/tree/master
+
+Installation
+~~~~~~~~~~~~
+
+1. Install edx-gea
+
+     .. code:: sh
+          pip install --extra-index-url https://pypi.fury.io/openfun edx-gea
+
+2. Add edx\_gea to installed Django apps
+
+   - In ``/edx/app/edxapp/edx-platform/cms/envs/common.py``, add ``'edx_gea'``
+     to OPTIONAL_APPS
+
+   - In ``/edx/app/edxapp/edx-platform/lms/envs/common.py``, add ``'edx_gea'``
+     to OPTIONAL_APPS
+
+Documentation
+~~~~~~~~~~~~~
+
+ http://edx-gea.readthedocs.org
+
+
